@@ -1,13 +1,113 @@
 body {
+  padding: 0;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+  background-color: #f0f0f0;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+header {
+  background-color: #fff;
+  padding: 0.1rem;
+  text-align: center;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.cards {
+  background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  justify-content: space-between;
+  width: 60%;
+  cursor: pointer;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  /* width: 40rem; */
+  align-items: center;
+}
+
+img {
+  max-width: 100%;
+  height: 100px;
+}
+
+.crumbs {
+  display: flex;
+}
+.crumbs p {
+  color: #fff;
+  padding: 0.5rem;
+  margin-right: 1rem;
+  background-color: hsl(217deg 99% 65%);
+  border-radius: 4px;
+}
+
+.btn {
+  font-size: 1rem;
+  margin-top: 0.6rem;
+  outline: none;
+  border: none;
+  width: 8rem;
+  padding: 0.55rem;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 4px;
+  background-color: hsl(217deg 99% 65%);
+  background-color: beige;
+  background-color: gray;
+}
+
+.hide {
+  display: none;
+}
+.show {
+  display: block;
+}
+
+form {
+  background-color: #fff;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.1);
+  padding: 1rem;
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  border-radius: 10px;
+}
+
+input[type='text'] {
+  width: 85%;
+  height: 1.5rem;
+  padding: 0.3rem;
+  outline: none;
+  margin: 0.3rem auto;
+  font-size: 1.1rem;
+  border: none;
+  border-bottom: 1px solid #000;
+}
+
+.check {
+  text-align: center;
+  margin: 0.5rem;
+  padding: 0.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: cornflowerblue;
+}
+
+@media (max-width: 650px) {
+  .cards {
+    width: 80%;
+  }
+  form {
+    width: 70%;
+  }
 }
