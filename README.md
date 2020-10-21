@@ -2,6 +2,8 @@
 
 `npm install`
 
+### RUN IN BROWSER
+
 `npm start`
 
 Runs the app in the development mode.<br />
