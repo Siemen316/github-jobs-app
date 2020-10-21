@@ -19,7 +19,7 @@ const reducer = (state, action) => {
       return {
         ...state,
         jobs: [],
-        isLoading: false,
+        isLoading: true,
         error: true,
       };
 

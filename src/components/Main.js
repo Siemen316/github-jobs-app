@@ -5,8 +5,8 @@ import JobCardList from './JobCardList';
 import JobSearch from './JobSearch';
 
 const Main = () => {
-  const [params, setParms] = useState({});
-  const { jobs, isLoading, error } = useFetch(params);
+  const [params, setParms] = useState({ description: '', location: '' });
+  const { jobs, isLoading } = useFetch(params);
 
   const searchJobs = (e) => {
     const name = e.target.name;
@@ -27,7 +27,8 @@ const Main = () => {
         jobs.map((job) => <JobCardList key={job.id} job={job} />)
       )}
 
-      {error ? <h1>ERORR!</h1> : null}
+      {/* {error ? <h1>ERORR!</h1> : null} */}
+      {/* {jobs.length === 0 && 'sorry!'} */}
     </div>
   );
 };
