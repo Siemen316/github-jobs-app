@@ -1,4 +1,4 @@
-
+# INSTALL THE DEPENDENCIES 
 
 ### `npm install`
 
